@@ -8,12 +8,12 @@ class Home extends Component
         return(
 
             <React.Fragment>
-                <Jumbotron className="row-odd mt-4">
+                <Jumbotron className="row-odd mt-0">
                     <div className="container">
                         <div className="row">
                             <div className="col-12 col-md-3 align-self-center">
                                 <span className="fa fa-user fa-2x fa-md-3x ml-1 ml-md-5"></span>
-                                <h4 className="ml-md-3">Objective</h4>
+                                <h4 className="ml-md-2">Objective</h4>
                             </div>
                             <div className="col-12 col-md-9 align-self-center">
                                 <p className="content">

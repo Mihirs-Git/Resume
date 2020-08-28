@@ -1,5 +1,5 @@
 import React from 'react';
-import { Jumbotron } from 'reactstrap';
+import { Navbar, NavItem, Nav, NavLink, Jumbotron } from 'reactstrap';
 
 function Footer(props)
 {
@@ -10,27 +10,60 @@ function Footer(props)
                 <div className="container">
                     <div className="row">
                         <div className="col-12 col-md-6">
-                            <ul type="None" className="p-0">
-                                <h4>Sitemap</h4>
-                                <li><span className="fa fa-home fa-sm"></span> Home</li>
-                                <li><span className="fa fa-book fa-sm"></span> Education</li>
-                                <li><span className="fa fa-briefcase fa-sm"></span> Projects</li>
-                                <li><span className="fa fa-trophy fa-sm"></span> Accomplishments</li>
-                                <li><span className="fa fa-hashtag fa-sm"></span> Proficiency</li>
-                                <li><span className="fa fa-address-book-o fa-sm"></span> Contact</li>
-                            </ul>
+                            <Navbar dark>
+                            <Nav pills vertical>
+                                <h4 className="footer-title pl-2">Sitemap</h4>
+                                <NavItem >
+                                    <NavLink href="#" className="activeClass"><span className="fa fa-home fa-sm"></span> Home</NavLink>
+                                </NavItem>
+                            
+                                <NavItem>
+                                    <NavLink href="/" className="activeClass"><span className="fa fa-book fa-sm"></span> Education</NavLink>
+                                </NavItem>
+
+                                <NavItem>
+                                    <NavLink href="/" className="activeClass"><span className="fa fa-briefcase fa-sm"></span> Projects</NavLink>
+                                </NavItem>
+
+                                <NavItem>
+                                    <NavLink href="/" className="activeClass"><span className="fa fa-trophy fa-sm"></span> Accomplishments</NavLink>
+                                </NavItem>
+                                
+                                <NavItem>
+                                    <NavLink href="/" className="activeClass"><span className="fa fa-hashtag fa-sm"></span> Proficiency</NavLink>
+                                </NavItem>
+                            
+                                <NavItem>
+                                    <NavLink href="/" className="activeClass"><span className="fa fa-address-book-o fa-sm"></span> Contact</NavLink>
+                                </NavItem>
+                            </Nav>
+                            
+                        </Navbar>
                         </div>
-                        <div className="col-12 col-md-6">                        
-                            <ul type="None" className="p-0">
-                                <h4>Social Media Links</h4>
-                                <li><span className="fa fa-facebook-square fa-sm"></span> Facebook</li>
-                                <li><span className="fa fa-instagram fa-sm"></span> Instagram</li>
-                                <li><span className="fa fa-twitter-square fa-sm"></span> Twitter</li>
-                                <li><span className="fa fa-linkedin-square fa-sm"></span> Linkedin</li>
-                            </ul>
+                        <div className="col-12 col-md-6">
+                            <Navbar dark>
+                            <Nav pills vertical>
+                                <h4 className="footer-title pl-2">Social Media</h4>
+                                <NavItem >
+                                    <NavLink href="#" className="activeClass"><span className="fa fa-facebook-square fa-sm"></span> Facebook</NavLink>
+                                </NavItem>
+                            
+                                <NavItem>
+                                    <NavLink href="/" className="activeClass"><span className="fa fa-instagram fa-sm"></span> Instagram</NavLink>
+                                </NavItem>
+
+                                <NavItem>
+                                    <NavLink href="/" className="activeClass"><span className="fa fa-twitter-square fa-sm"></span> Twitter</NavLink>
+                                </NavItem>
+
+                                <NavItem>
+                                    <NavLink href="/" className="activeClass"><span className="fa fa-linkedin-square fa-sm"></span> LinkedIn</NavLink>
+                                </NavItem>
+                            </Nav>
+                        </Navbar>
                         </div>
                     </div>
-                </div>
+                </div>    
             </Jumbotron>
         </React.Fragment>
 

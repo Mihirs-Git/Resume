@@ -1,9 +1,3 @@
-.title
-{
-  color: #FDFCDC;
-  font-family: 'Arial';
-}
-
 .navbar-dark
 {
   background-color: #0081A7;
@@ -12,6 +6,21 @@
 .footer
 {
   background-color: #0081A7;
+}
+
+.footer-title
+{
+  color: #FDFCDC;
+}
+
+.list-item
+{
+  color: #FED9B7;
+}
+
+.list-item:hover
+{
+  color: #FDFCDC;
 }
 
 .content
@@ -29,7 +38,24 @@
   background-color: #FED9B7;
 }
 
-Button:hover
+.nav-link
 {
-  background-color: #0081A7;
+  color: #FED9B7;
+}
+
+.jumbotron
+{
+  margin-bottom: 0;
+}
+
+.activeClass:hover
+{
+  background-color: #FDFCDC;
+  color: #0081A7;
+}
+
+.activeClass:active
+{
+  background-color: #FDFCDC;
+  color: #0081A7;
 }
