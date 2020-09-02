@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Navbar, NavItem, Nav, NavLink, NavbarBrand, NavbarToggler, Collapse } from 'reactstrap';
+import { Navbar, NavItem, Nav, NavbarBrand, NavbarToggler, Collapse } from 'reactstrap';
+import { NavLink } from 'react-router-dom';
 
 class Header extends Component
 {
@@ -32,27 +33,27 @@ class Header extends Component
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav pills>
                                 <NavItem>
-                                    <NavLink href="#" className="activeClass"><span className="fa fa-home fa-sm"></span> Home</NavLink>
+                                    <NavLink to="/home" className="nav-link " activeClassName="activeClass"><span className="fa fa-home fa-sm"></span> Home</NavLink>
                                 </NavItem>
                             
                                 <NavItem>
-                                    <NavLink href="/" className="activeClass"><span className="fa fa-book fa-sm"></span> Education</NavLink>
+                                    <NavLink to="/education" className="nav-link " activeClassName="activeClass"><span className="fa fa-book fa-sm"></span> Education</NavLink>
                                 </NavItem>
 
                                 <NavItem>
-                                    <NavLink href="/" className="activeClass"><span className="fa fa-briefcase fa-sm"></span> Projects</NavLink>
+                                    <NavLink to="/projects" className="nav-link" activeClassName="activeClass"><span className="fa fa-briefcase fa-sm"></span> Projects</NavLink>
                                 </NavItem>
 
                                 <NavItem>
-                                    <NavLink href="/" className="activeClass"><span className="fa fa-trophy fa-sm"></span> Accomplishments</NavLink>
+                                    <NavLink to="/awards" className="nav-link" activeClassName="activeClass"><span className="fa fa-trophy fa-sm"></span> Accomplishments</NavLink>
                                 </NavItem>
                                 
                                 <NavItem>
-                                    <NavLink href="/" className="activeClass"><span className="fa fa-hashtag fa-sm"></span> Proficiency</NavLink>
+                                    <NavLink to="/skills" className="nav-link" activeClassName="activeClass"><span className="fa fa-hashtag fa-sm"></span> Proficiency</NavLink>
                                 </NavItem>
                             
                                 <NavItem>
-                                    <NavLink href="/" className="activeClass"><span className="fa fa-address-book-o fa-sm"></span> Contact</NavLink>
+                                    <NavLink to="/contact" className="nav-link" activeClassName="activeClass"><span className="fa fa-address-book-o fa-sm"></span> Contact</NavLink>
                                 </NavItem>
                             </Nav>
                         </Collapse>    

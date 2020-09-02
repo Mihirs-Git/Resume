@@ -39,7 +39,7 @@ class Home extends Component
                                 </h5>
                                 <p>
                                     Babaria Institute of Technology, GTU<br></br>
-                                    C.P.I: 9.11, C.G.P.A: 8.99
+                                    C.P.I: 9.12, C.G.P.A: 8.99
                                 </p>
                                 <Button outline size="sm" color="primary">View More</Button>
                             </div>

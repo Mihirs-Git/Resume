@@ -6,6 +6,8 @@
 .footer
 {
   background-color: #0081A7;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 .footer-title
@@ -38,24 +40,48 @@
   background-color: #FED9B7;
 }
 
-.nav-link
-{
-  color: #FED9B7;
-}
-
 .jumbotron
 {
   margin-bottom: 0;
 }
 
-.activeClass:hover
+.nav-link
+{
+  color: #FED9B7;
+}
+
+.nav-link:hover
 {
   background-color: #FDFCDC;
   color: #0081A7;
 }
 
-.activeClass:active
+.activeClass
 {
   background-color: #FDFCDC;
   color: #0081A7;
+}
+
+.card-header
+{
+    color: #FDFCDC;
+    background-color: #0081A7;
+}
+
+.card-body
+{
+  background-color: #FDFCDC;
+  color: #0081A7;
+}
+
+.list
+{
+  font-size: large;
+  padding: 0;
+}
+
+.certi-links
+{
+  text-decoration: none;
+  font-size: small;
 }
