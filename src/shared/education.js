@@ -1,0 +1,90 @@
+export const EDUCATION =  {
+    
+    "college": { 
+    
+        "spi" : {
+                "spi" :  [9.66,8.94,9.12,9.24,8.60,8.69,0.0,10.0],
+                "sem" : ["SEM-1","SEM-2","SEM-3","SEM-4","SEM-5","SEM-6","SEM-7","SEM-8"]
+            },
+
+        "cpi" : {
+                "cpi" : [9.66,9.28,9.23,9.23,9.11,9.04,0.0,9.12],
+                "sem" : ["SEM-1","SEM-2","SEM-3","SEM-4","SEM-5","SEM-6","SEM-7","SEM-8"]
+            },
+
+        "cgpa" : {
+                "cgpa" : [8.60,8.64,0.0,8.99],
+                "sem" : ["SEM-5","SEM-6","SEM-7","SEM-8"]
+            }
+    },
+
+    "school" : {
+
+        "hsc" : {
+            "standard" : "H.S.C",
+            "percentile": "82.02",
+            "percentage": "65.20",
+            "school-name": "B.V.B's Narmada Vidyalaya",
+            "board" : "G.S.H.E.B."
+        },
+        "ssc" : {
+            "standard" : "S.S.C",
+            "percentile": "97.17",
+            "percentage": "83.67",
+            "school-name": "B.V.B's Narmada Vidyalaya",
+            "board" : "G.S.E.B."
+        }
+    },
+    "certification" : [
+        {
+            "title" : "Full-Stack Web Development with React",
+            "specialization-link" : "#",
+            "courses" : [
+                "Front-End Web UI Frameworks and Tools: Bootstrap 4", 
+                "Front-End Web Development with React",
+                "Multiplatform Mobile App Development with React Native", 
+                "Nodejs - Express, MongoDB, Mongoose" ],
+            "links" : [
+                "https://www.coursera.org/account/accomplishments/certificate/HNEAMCGSHKPP",
+                "https://www.coursera.org/account/accomplishments/certificate/RFBRQRMUCEUY",
+                "https://www.coursera.org/account/accomplishments/certificate/M9UKUEPR8BXJ",
+                "#"
+            ]
+        },
+        {
+            "title" : "Python for Everybody",
+            "specialization-link" : "#",
+            "courses" : [
+                "Programming for Everybody (Getting Started with Python)", 
+                "Python Data Structures",
+                "Using Python to Access Web Data", 
+                "Using Databases with Python" ],
+            "links" : [
+                "https://www.coursera.org/account/accomplishments/certificate/AHFEYCT6DHT7",
+                "https://www.coursera.org/account/accomplishments/certificate/32TPQXKBLJE4",
+                "https://www.coursera.org/account/accomplishments/certificate/PQHCZ8LJ69RG",
+                "https://www.coursera.org/account/accomplishments/certificate/CHY9THU367A2"
+            ]
+        },
+        {
+            "title" : "Architecting with Google Compute Engine",
+            "specialization-link" : "https://www.coursera.org/account/accomplishments/specialization/certificate/RANQZUJ34G5P",
+            "courses" : [
+                "Google Cloud Platform Fundamentals: Core Infrastructure", 
+                "Essential Google Cloud Infrastructure: Foundation",
+                "Essential Google Cloud Infrastructure: Core Services", 
+                "Elastic Google Cloud Infrastructure: Scaling and Automation",
+                "Elastic Cloud Infrastructure: Containers and Services",
+                "Reliable Google Cloud Infrastructure: Design and Process" ],
+            "links" : [
+                "https://www.coursera.org/account/accomplishments/certificate/ZHBF6HYUKKEJ",
+                "https://www.coursera.org/account/accomplishments/certificate/LCKXK2MEGC3K",
+                "https://www.coursera.org/account/accomplishments/certificate/775ZUP5A5SXS",
+                "https://www.coursera.org/account/accomplishments/certificate/N3HYEFKWYVH6",
+                "https://www.coursera.org/account/accomplishments/certificate/BUWY874WBHW2",
+                "https://www.coursera.org/account/accomplishments/certificate/9AYDYMMZM56M"
+            ]
+        }
+
+    ]
+};

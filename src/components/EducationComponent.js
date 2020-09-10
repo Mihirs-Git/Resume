@@ -9,7 +9,7 @@ const graphData = {
         backgroundColor: '#FED9B7',
         borderColor: "#0081A7",
         borderWidth: 2,
-        data: [9.66,9.27,9.12,0.0,0.0,0.0,0.0,10.0] 
+        data: [9.66,8.94,9.12,9.24,8.60,8.69,8.75,10.0]
     }]
 };
 
@@ -20,7 +20,7 @@ class Education extends Component{
     {
         super(props);
         this.state = {
-            isActiveSpi: false,
+            isActiveSpi: true,
             isActiveCpi: false,
             isActiveCgpa: false
         }
@@ -35,21 +35,21 @@ class Education extends Component{
                     this.setState({isActiveSpi: true, isActiveCpi: false, isActiveCgpa: false});
                     graphData.labels =  ['SEM-1','SEM-2','SEM-3','SEM-4','SEM-5','SEM-6','SEM-7','SEM-8'];
                     graphData.datasets[0].label = "SPI";
-                    graphData.datasets[0].data = [9.66,9.27,9.12,0.0,0.0,8.69,0.0,10.0];   
+                    graphData.datasets[0].data = [9.66,8.94,9.12,9.24,8.60,8.69,8.75,10.0];   
                     break;
 
             case "cpi": 
                     this.setState({isActiveSpi: false, isActiveCpi: true, isActiveCgpa: false});
                     graphData.labels =  ['SEM-1','SEM-2','SEM-3','SEM-4','SEM-5','SEM-6','SEM-7','SEM-8'];
                     graphData.datasets[0].label = "CPI";
-                    graphData.datasets[0].data = [9.66,9.28,1,0.0,0.0,9.04,0.0,9.12];
+                    graphData.datasets[0].data = [9.66,9.28,9.23,9.23,9.11,9.04,9.00,9.12];
                     break;
 
             case "cgpa": 
                     this.setState({isActiveSpi: false, isActiveCpi: false, isActiveCgpa: true});
                     graphData.labels =  ['SEM-5','SEM-6','SEM-7','SEM-8'];
                     graphData.datasets[0].label = "CGPA"
-                    graphData.datasets[0].data = [0.0,8.64,0.0,8.99];
+                    graphData.datasets[0].data = [8.60,8.64,8.68,8.99];
                     break;
         }
 
@@ -93,24 +93,32 @@ class Education extends Component{
                 <div className="container mt-5">
                     <div className="row">
                         <div className="col-12 col-md-6">
+                            <h4><span className="fa fa-sm fa-book"></span> H.S.C. </h4>
                             <Card>
-                                <CardHeader className="text-center card-header"><span className="fa fa-sm fa-book"></span> H.S.C </CardHeader>
-                                <CardBody className="card-body">
-                                    <CardSubtitle>B.V.B's Narmada Vidyalaya</CardSubtitle>
-                                    <CardSubtitle>2015-16</CardSubtitle>
-                                    <CardText>Percentage: 86.00%</CardText>
+                                <CardBody>
+                                    <CardTitle className="text-center">82.02</CardTitle>
+                                    <CardSubtitle className="text-center">Percentile Marks</CardSubtitle>
                                 </CardBody>
+                                <CardFooter>
+                                        <CardText>B.V.B's Narmada Vidyalaya</CardText>
+                                        <CardText>G.S.H.E.B.</CardText>
+                                        <CardText>Percentage: 65.20%</CardText>
+                                </CardFooter>
                             </Card>  
                         </div>
-                        <div className="col-12 col-md-6">
+                        <div className="col-12 col-md-6 mt-4 mt-md-0">
+                            <h4><span className="fa fa-sm fa-book"></span> S.S.C. </h4>
                             <Card>
-                                <CardHeader className="text-center card-header"><span className="fa fa-sm fa-book"></span> S.S.C </CardHeader>
-                                <CardBody className="card-body">
-                                    <CardSubtitle>B.V.B's Narmada Vidyalaya</CardSubtitle>
-                                    <CardSubtitle>2013-14</CardSubtitle>
-                                    <CardText>Percentage: 86.00%</CardText>
+                                <CardBody>
+                                    <CardTitle className="text-center">97.17</CardTitle>
+                                    <CardSubtitle className="text-center">Percentile Marks</CardSubtitle>
                                 </CardBody>
-                            </Card>
+                                <CardFooter>
+                                        <CardText>B.V.B's Narmada Vidyalaya</CardText>
+                                        <CardText>G.S.E.B.</CardText>
+                                        <CardText>Percentage: 83.67%</CardText>
+                                </CardFooter>
+                            </Card>  
                         </div>
                     </div>
                 </div>

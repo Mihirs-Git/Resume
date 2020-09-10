@@ -8,6 +8,7 @@
   background-color: #0081A7;
   padding-top: 2%;
   padding-bottom: 2%;
+  margin-top: 2%;
 }
 
 .footer-title
@@ -62,16 +63,36 @@
   color: #0081A7;
 }
 
-.card-header
-{
-    color: #FDFCDC;
-    background-color: #0081A7;
+.card{
+  border-radius: 1em;
 }
 
 .card-body
 {
+    color: #FDFCDC;
+    background-color: #0081A7;
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+}
+
+.card-footer
+{
   background-color: #FDFCDC;
   color: #0081A7;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+}
+
+.card-text{
+  margin: 0;
+  padding: 0;
+}
+
+.card-title{
+
+  font-size: xx-large;
+  margin: 0;
+
 }
 
 .list
@@ -85,3 +106,4 @@
   text-decoration: none;
   font-size: small;
 }
+
