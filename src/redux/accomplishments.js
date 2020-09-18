@@ -3,7 +3,7 @@ import * as ActionTypes from './ActionTypes';
 export const Accomplishments = (state = {
     isLoading : true,
     accomplishments : [],
-    errmess = null
+    errmess: null
 }, action) => {
 
     switch(action.type)

@@ -10,10 +10,7 @@ export const ConfigureStore = () => {
 
         combineReducers({
             education: Education,
-            accomplishments: Accomplishments
         }),
-
-        applyMiddleware(thunk, logger);
 
     );
 

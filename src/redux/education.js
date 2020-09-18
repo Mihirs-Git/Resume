@@ -1,24 +1,8 @@
 import * as ActionTypes from './ActionTypes';
+import {EDUCATION} from '../shared/education';
 
-export const Education = (state = {
-    isLoading : true,
-    education : [],
-    errmess = null
-}, action) => {
+export const Education = (state = EDUCATION, action) => {
 
-    switch(action.type)
-    {
-        case ActionTypes.ADD_EDUCATION: 
-            return {...state, isLoading: false, education: action.payload, errmess: null};
-        
-        case ActionTypes.EDUCATION_LOADING: 
-            return {...state, isLoading: true, education: [], errmess: null};
-        
-        case ActionTypes.EDUCATION_FAILED: 
-            return {...state, isLoading: false, education: [], errmess: action.payload};
-
-        default: 
-            return state;
-    }
+    return state;
 
 };

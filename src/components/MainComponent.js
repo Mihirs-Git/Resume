@@ -5,6 +5,15 @@ import Home from './HomeComponent';
 import Education from './EducationComponent';
 import Contact from './ContactComponent';
 import { Switch, Route, withRouter, Redirect } from 'react-router-dom';
+import { connect } from 'react-redux';
+
+const mapDispatchToProps = state => {
+    return(
+        {
+            education: state.education
+        }
+    );
+};
 
 class Main extends Component{
     render(){
@@ -13,7 +22,7 @@ class Main extends Component{
                 <Header></Header>
                 <Switch>
                     <Route path="/home" component={Home}></Route>
-                    <Route exact path="/education" component={Education}></Route>
+                    <Route exact path="/education" component={() => <Education education={this.props.education}></Education>}></Route>
                     <Route exact path="/contact" component={Contact}></Route>
                     <Redirect to="/home"></Redirect>
                 </Switch>
@@ -22,4 +31,4 @@ class Main extends Component{
         )
     }
 }
-export default withRouter(Main);
+export default withRouter(connect(mapDispatchToProps)(Main));
